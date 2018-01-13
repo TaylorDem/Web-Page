@@ -119,7 +119,8 @@ function dayShift() {
 if ya need just regular text from file on screen, just make file a non 
 extension file like hello.c -> hello_c -->
 <div>
-  <li><a href = "http://www.yahoo.com">Yahoo Email</a></li>
+  <li><a href = "http://www.yahoo.com">Yahoo</a></li>
+  <li><a href = "https://mail.google.com/mail/#inbox">Gmail</a></li>
   <li><a href = "https://drive.google.com/">Google Drive</a></li>
   <li><a href = "http://www.youtube.com">Youtube</a></li>
   <li><a href = "http://www.google.com">Google</a> for all your searching desires :)</li>
@@ -133,7 +134,7 @@ extension file like hello.c -> hello_c -->
   <li><a href = "http://www.hulu.com">Hulu</a> South Park</li>
   <li><a href = "http://www.pandora.com">Pandora</a></li>
   <li><a href = "http://www.freetetris.org/game.php">Tetris</a> cuz bored</li>
-  <li><a href = "http://www.justanimedubbed.tv/watch/south-park/">South Park</a> stream.</li>
+  <li><a href = "http://southpark.cc.com/full-episodes/">South Park</a> stream.</li>
   <li><a href = "http://www.couchtuner.eu/">CouchTuner</a> to watch tv shows</li>
   <li><a href = "http://www.reddit.com/" target="_blank">Reddit</a> for teh lolz and cats!</li>
   <!-- <li><a href = "http://weavesilk.com/">Silk</a> tranquil designs</li> -->
