@@ -108,9 +108,10 @@ function dayShift() {
 </div>
 
 <!-- pictures that go no where (affected by Buttons)  -->
-<div id="pics">
-  <img src="http://25.media.tumblr.com/tumblr_m36jcakEz21rrj3pro1_500.gif" style="position: absolute; top: 40px; left: 525px;" alt="sweet astronaut" height= 575 width= 500>
-  <img src="C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg" style="position: absolute; top: 240px; left: 1030px;" alt="Thrones" height= auto width= 300>
+<div id="pics">C:/Users/Taylor/Desktop/PicsGifs/space cat.jpg
+  <img src="C:/Users/Taylor/Desktop/PicsGifs/space cat.jpg" style="position: absolute; top: 40px; left: 525px;" alt="sweet astronaut" height= 575 width= 500>
+  <img src="http://25.media.tumblr.com/tumblr_m36jcakEz21rrj3pro1_500.gif" style="position: absolute; top: 240px; left: 1030px;" alt="Thrones" height= 350 width= 300>
+  <img src="C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg" style="position: absolute; top: 140px; left: 1030px;" alt="Thrones" height= auto width= 300>
 </div>
 
 <body>
