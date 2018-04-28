@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- http://web.cs.sunyit.edu/~demarct/ was the original that might still be active. -->
+<html>
+<head>
+  <!-- link is like include statement, this one makes color codes -->
+	<!-- <link rel=stylesheet href = "color.css" type="text/css" /> -->
+	<link rel="shortcut icon" href="http://web.cs.sunyit.edu/~demarct/favicon.ico"/>
+	<title>Taylor's Page</title>
+	<div id= "Heading">
+	  <h1>Get Back To Work!</h1>
+	</div>
+
+</head>
+
+<!-- Quick fix to add CSS to file without needing to create new file and handle inputting files and directory/packaging nonsense-->
+<style>
+
+*{
+	margin-top: 0;
+}
+
+#Heading {
+	color: Magenta;
+	text-align: center;
+	position: relative;
+  background-size: cover;
+	background-color: #000;
+	<!-- Tried to get game of thrones image to be in background... no juice.... -->
+	/*background-image: url("C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg");
+	background-repeat: no-repeat;
+  background-position: right top;*/
+  background-attachment: scroll; /* this is default. fixed sets it to stay where it is, yet I don't see any change. */
+}
+
+#Buttons {
+  float: right;
+}
+
+#timestamp {
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 3px;
+}
+
+p{
+	color: crimson;
+}
+
+</style>
+
+
+<!-- Making some JavaScript happen... this could probably be in another file just like CSS styling but this makes things easier for now-->
+<script>
+//alert("hello!");  //creates those pop-ups that suck
+
+function hideStuff(id) {
+  document.getElementById(id).style.display = 'none';
+  document.getElementById("show").checked = false; //should uncheck the show button when clicking hide button. makes sense right?
+}
+
+function showStuff(id) {
+  document.getElementById(id).style.display = 'inline';
+  document.getElementById("hide").checked = false; //doesn't work if you pull by name? some reason works fine with id tho.
+}
+
+function printDate() {
+  var date = new Date();
+  date.setTime(date.getTime()+date.getTimezoneOffset()*60*1000)
+  document.write(date.toUTCString());
+}
+
+function nightShift() {
+  document.body.style.backgroundColor = 'black';
+  document.body.style.color = 'white';
+}
+
+function dayShift() {
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black';
+}
+
+</script>
+
+<div id="timestamp">
+ Date: <script>printDate();</script>
+
+</div>
+
+
+<div id="Buttons">
+<input id="hide" type="radio" onClick="hideStuff('pics')" align="left">Hide Pics?</input>
+<br>
+<input id="show" type="radio" onClick="showStuff('pics')" align="left" checked="true">Show Pics?</input>
+<br>
+<button onclick="nightShift()">Night</button>
+<br>
+<button onClick="dayShift()">Day</button>
+</div>
+
+<div> <!-- picture links -->
+  <A HREF="http://www.reddit.com/r/LeagueOfMemes/"><IMG SRC="http://web.cs.sunyit.edu/~demarct/pics/fullAPteemo.gif" 
+  style="position: absolute; top: 200px; left: 265px;" ALT="Teemo" WIDTH=250 HEIGHT=auto></A>
+  <A HREF="http://www.reddit.com/r/swoleacceptance/"><IMG SRC="http://web.cs.sunyit.edu/~demarct/pics/Yoda.jpg" style="position: 
+  absolute; top: 40px; left: 375px;" ALT="Lift, Do You Even?" WIDTH=128 HEIGHT=128></A>
+  <A HREF="http://thepiratebay.cr/"><IMG 
+  SRC="http://web.cs.sunyit.edu/~demarct/pics/BTL.gif" style="position: absolute; top: 415px; 
+  left: 230px;" ALT="Internet Bad Ass" WIDTH=250 HEIGHT=200></A>
+</div>
+
+<!-- pictures that go no where (affected by Buttons)  -->
+<div id="pics">
+  <img src="C:/Users/Taylor/Desktop/PicsGifs/space cat.jpg" style="position: absolute; top: 40px; left: 525px;" alt="sweet astronaut" height= 575 width= 500>
+  <img src="http://25.media.tumblr.com/tumblr_m36jcakEz21rrj3pro1_500.gif" style="position: absolute; top: 240px; left: 1030px;" alt="Thrones" height= 350 width= 300>
+  <img src="C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg" style="position: absolute; top: 140px; left: 1030px;" alt="Thrones" height= auto width= 300>
+</div>
+
+<body>
+  <p>Welcome to my Link Page!
+<!-- li = linked item, linking .c, .exe , .cpp allow for downloads,
+if ya need just regular text from file on screen, just make file a non 
+extension file like hello.c -> hello_c -->
+<div>
+  <li><a href = "http://www.yahoo.com">Yahoo</a></li>
+  <li><a href = "https://mail.google.com/mail/#inbox">Gmail</a></li>
+  <li><a href = "https://drive.google.com/">Google Drive</a></li>
+  <li><a href = "http://www.youtube.com">Youtube</a></li>
+  <li><a href = "http://www.google.com">Google</a> for all your searching desires :)</li>
+  <li><a href = "http://www.wikipedia.com">Wikipedia</a> if google would send you there anyway...</li>
+  <!-- <li><a href = "http://www.facebook.com">Facebook</a></li> -->
+  <!-- <li><a href = "http://www.twitter.com">Twitter</a> tweety.</li> -->
+  <li><a href = "http://www.twitch.tv">Twitch</a> for all the streams!</li>
+  <li><a href = "http://www.gizmodo.com">Gizmodo</a></li>
+  
+  <li><a href = "http://www.netflix.com" target="_blank">Netflix</a></li>
+  <li><a href = "http://www.hulu.com">Hulu</a> South Park</li>
+  <li><a href = "http://www.pandora.com">Pandora</a></li>
+  <li><a href = "http://www.freetetris.org/game.php">Tetris</a> cuz bored</li>
+  <li><a href = "http://southpark.cc.com/full-episodes/">South Park</a> stream.</li>
+  <li><a href = "http://www.couchtuner.eu/">CouchTuner</a> to watch tv shows</li>
+  <li><a href = "http://www.reddit.com/" target="_blank">Reddit</a> for teh lolz and cats!</li>
+  <!-- <li><a href = "http://weavesilk.com/">Silk</a> tranquil designs</li> -->
+</div>
+</p>
+
+<!-- use this to make the click happen on this page, but also open a new 
+tab that gets the focus.
+
+onclick="window.open('#','_blank');window.open(this.href,'_self');"
+-->
+
+<div>  <!-- Learning section -->
+  <p>Working? Need help?:
+    <li><a href = "https://github.com/">GitHub</a></li>
+    <li><a href = "http://www.stackoverflow.com/" onclick="window.open('#','_blank');window.open(this.href,'_self');">Stack Overflow</a></li>
+    <li><a href = "http://lua-users.org/wiki/TutorialDirectory">Lua Tutorial</a></li>
+    <li><a href = "https://love2d.org/wiki/Main_Page">LOVE2D</a></li> 
+    <li><a href = "https://www.codecademy.com/learn">Code Academy</a></li>
+  </p>
+</div>
+
+
+<div>
+  <p>For any video games I may play:
+
+    <li><a href = "http://www.psypokes.com/">Psypokes</a> for pokemon</li>
+    <li><a href = "http://pokemondb.net/pokedex/national">Pokedex</a></li>
+    <li><a href = "http://www.gamefaqs.com/">Gamefaqs</a> for walkthroughs</li>
+    <!--<li><a href = "http://www.wowhead.com/">Wowhead</a> for wow</li>-->
+    <li><a href = "http://www.lolnexus.com/" onclick="window.open('#','_blank');window.open(this.href,'_self');">LolNexus</a> for league</li>
+    <li><a href = "http://www.championselect.net/" onclick="window.open('#','_blank');window.open(this.href,'_self');">Champ Select</a></li>
+    <li><a href = "http://www.lolking.net/">LolKing</a> to check summoners</li>
+ </p>
+</div>
+
+</body>
+</html>
