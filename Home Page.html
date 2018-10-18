@@ -12,6 +12,12 @@
 
 </head>
 
+
+
+
+
+
+
 <!-- Quick fix to add CSS to file without needing to create new file and handle inputting files and directory/packaging nonsense-->
 <style>
 
@@ -25,8 +31,8 @@
 	position: relative;
   background-size: cover;
 	background-color: #000;
-	<!-- Tried to get game of thrones image to be in background... no juice.... -->
-	/*background-image: url("C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg");
+	/* Tried to get game of thrones image to be in background... no juice....
+	background-image: url("C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg");
 	background-repeat: no-repeat;
   background-position: right top;*/
   background-attachment: scroll; /* this is default. fixed sets it to stay where it is, yet I don't see any change. */
@@ -50,6 +56,17 @@ p{
 </style>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <!-- Making some JavaScript happen... this could probably be in another file just like CSS styling but this makes things easier for now-->
 <script>
 //alert("hello!");  //creates those pop-ups that suck
@@ -66,8 +83,11 @@ function showStuff(id) {
 
 function printDate() {
   var date = new Date();
-  date.setTime(date.getTime()+date.getTimezoneOffset()*60*1000)
-  document.write(date.toUTCString());
+  date.setTime(date.getTime()) //+date.getTimezoneOffset()) 
+  document.getElementById("timestamp").innerHTML = date.toString();
+  t = setTimeout(function () {
+            printDate()
+        }, 500);
 }
 
 function nightShift() {
@@ -80,10 +100,43 @@ function dayShift() {
   document.body.style.color = 'black';
 }
 
+/*
+function timer() {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById("timestamp").innerHTML += h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            printDate()
+            startTime()
+        }, 500);
+    }
+    startTime();
+}
+*/
 </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="timestamp">
- Date: <script>printDate();</script>
+  Date: <script>printDate();</script>
+  <!--Time: <script>timer();</script>-->
 
 </div>
 
@@ -99,12 +152,12 @@ function dayShift() {
 </div>
 
 <div> <!-- picture links -->
-  <A HREF="http://www.reddit.com/r/LeagueOfMemes/"><IMG SRC="http://web.cs.sunyit.edu/~demarct/pics/fullAPteemo.gif" 
+  <A HREF="http://www.reddit.com/r/LeagueOfMemes/"><IMG SRC="https://media1.tenor.com/images/af5ed6a78c4757831c344d4d9280b326/tenor.gif?itemid=7750647" 
   style="position: absolute; top: 200px; left: 265px;" ALT="Teemo" WIDTH=250 HEIGHT=auto></A>
-  <A HREF="http://www.reddit.com/r/swoleacceptance/"><IMG SRC="http://web.cs.sunyit.edu/~demarct/pics/Yoda.jpg" style="position: 
-  absolute; top: 40px; left: 375px;" ALT="Lift, Do You Even?" WIDTH=128 HEIGHT=128></A>
+  <!--<A HREF="http://www.reddit.com/r/swoleacceptance/"><IMG SRC="http://web.cs.sunyit.edu/~demarct/pics/Yoda.jpg" style="position: 
+  absolute; top: 40px; left: 375px;" ALT="Lift, Do You Even?" WIDTH=128 HEIGHT=128></A>-->
   <A HREF="http://thepiratebay.cr/"><IMG 
-  SRC="http://web.cs.sunyit.edu/~demarct/pics/BTL.gif" style="position: absolute; top: 415px; 
+  SRC="https://cdn.wccftech.com/wp-content/uploads/2016/05/pirate-bay-740x416.jpg" style="position: absolute; top: 415px; 
   left: 230px;" ALT="Internet Bad Ass" WIDTH=250 HEIGHT=200></A>
 </div>
 
