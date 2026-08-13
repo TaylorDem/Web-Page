@@ -1,19 +1,36 @@
 * {
-    margin-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-image: url("space cat.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #Heading {
+    height: 10vh;
     color: Magenta;
     text-align: center;
-    position: relative;
+    background-image: url("Thrones.jpg");
     background-size: cover;
-    background-color: #000;
-    /* Tried to get game of thrones image to be in background... no juice....
-	background-image: url("C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg");
-	background-repeat: no-repeat;
-  background-position: right top;*/
-    background-attachment: scroll;
-    /* this is default. fixed sets it to stay where it is, yet I don't see any change. */
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pics {
+    display: none;
+    position: absolute; 
+    left: 50%;  
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 #Buttons {
@@ -21,7 +38,6 @@
 }
 
 #timestamp {
-    float: right;
     position: absolute;
     bottom: 10px;
     right: 3px;
@@ -30,3 +46,4 @@
 p {
     color: crimson;
 }
+

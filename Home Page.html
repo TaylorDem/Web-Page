@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<!-- http://web.cs.sunyit.edu/~demarct/ was the original that might still be active. -->
 <html>
 
 <head>
-  <link rel="shortcut icon" href="http://web.cs.sunyit.edu/~demarct/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
   <script src="scripts.js"></script>
-
   <title>Taylor's Page</title>
+</head>
+
+<body>
+
   <div id="Heading">
     <h1>Get Back To Work!</h1>
   </div>
+  <br><br>
+  <div id="timestamp">
+    Date:
+    <script>printDate();</script>
+    <!--Time: <script>timer();</script>-->
 
-</head>
-
-
-<div id="timestamp">
-  Date:
-  <script>printDate();</script>
-  <!--Time: <script>timer();</script>-->
-
-</div>
+  </div>
 
 
-<div id="Buttons">
-  <input id="hide" type="radio" onClick="hideStuff('pics')" align="left">Hide Pics?</input>
-  <br>
-  <input id="show" type="radio" onClick="showStuff('pics')" align="left" checked="true">Show Pics?</input>
-  <br>
-  <button onclick="nightShift()">Night</button>
-  <br>
-  <button onClick="dayShift()">Day</button>
-</div>
+  <div id="Buttons">
+    <input id="hide" name="teemo" type="radio" onClick="hideStuff('pics')" align="left" checked="true"> Hide
+    Teemo?</input>
+    <br>
+    <input id="show" name="teemo" type="radio" onClick="showStuff('pics')" align="left">Show Teemo?</input>
+    <br>
+    <button onclick="nightShift()">White Text</button>
+    <br>
+    <button onClick="dayShift()">Black Text</button>
+  </div>
 
-<div> <!-- picture links -->
-  <A HREF="http://www.reddit.com/r/LeagueOfMemes/"><IMG
-      SRC="https://media1.tenor.com/images/af5ed6a78c4757831c344d4d9280b326/tenor.gif?itemid=7750647"
-      style="position: absolute; top: 200px; left: 265px;" ALT="Teemo" WIDTH=250 HEIGHT=auto></A>
-</div>
+  <div id="pics"> <!-- picture links -->
+    <a href="http://www.reddit.com/r/LeagueOfMemes/">
+      <img src="https://media1.tenor.com/images/af5ed6a78c4757831c344d4d9280b326/tenor.gif?itemid=7750647" 
+        alt="Teemo">
+    </a>
+  </div>
 
-<!-- pictures that go no where (affected by Buttons)  -->
-<div id="pics">
-  <img src="C:/Users/demar/Desktop/PicsGifs/space cat.jpg" style="position: absolute; top: 40px; left: 525px;"
-    alt="sweet astronaut" height=575 width=500>
+  <!-- pictures that go no where (affected by Buttons)  -->
+  <!--
+<div>
   <img src="http://25.media.tumblr.com/tumblr_m36jcakEz21rrj3pro1_500.gif"
     style="position: absolute; top: 240px; left: 1030px;" alt="Thrones" height=350 width=300>
   <img src="C:/Users/demar/Desktop/Coding Adventures/Thrones.jpg" style="position: absolute; top: 140px; left: 1030px;"
@@ -50,8 +49,9 @@
   <img src="C:/Users/demar/Desktop/PicsGifs/Cowboy Space Cat.jpg" style="position: absolute; top: 350px; left: 300px;"
     alt="sweet cowboy" height=250 width=225>
 </div>
+-->
 
-<body>
+
   <p>It's nice to have this page. Try to keep it updated.
 
     <!--Make this a navbar?-->

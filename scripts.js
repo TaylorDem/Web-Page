@@ -1,11 +1,9 @@
 function hideStuff(id) {
     document.getElementById(id).style.display = 'none';
-    document.getElementById("show").checked = false; //should uncheck the show button when clicking hide button. makes sense right?
 }
 
 function showStuff(id) {
-    document.getElementById(id).style.display = 'inline';
-    document.getElementById("hide").checked = false; //doesn't work if you pull by name? some reason works fine with id tho.
+    document.getElementById(id).style.display = 'block';
 }
 
 function printDate() {
