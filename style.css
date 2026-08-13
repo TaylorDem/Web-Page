@@ -1,0 +1,32 @@
+* {
+    margin-top: 0;
+}
+
+#Heading {
+    color: Magenta;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-color: #000;
+    /* Tried to get game of thrones image to be in background... no juice....
+	background-image: url("C:/Users/Taylor/Desktop/Coding Adventures/Thrones.jpg");
+	background-repeat: no-repeat;
+  background-position: right top;*/
+    background-attachment: scroll;
+    /* this is default. fixed sets it to stay where it is, yet I don't see any change. */
+}
+
+#Buttons {
+    float: right;
+}
+
+#timestamp {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 3px;
+}
+
+p {
+    color: crimson;
+}
